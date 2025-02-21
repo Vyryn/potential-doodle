@@ -8,11 +8,9 @@ function loadTableData() {
         data.forEach(row => {
           const tr = document.createElement('tr');
           tr.innerHTML = `
-            <td>${row.modelName}</td>
+            <td>${row.modelTitle}</td>
             <td>${row.company}</td>
-            <td>${row.benchmarkLow}</td>
-            <td>${row.benchmarkDiff}</td>
-            <td>${row.benchmarkHigh}</td>
+            <td>${row.gpqa}</td>
           `;
           tbody.appendChild(tr);
         });

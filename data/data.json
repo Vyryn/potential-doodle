@@ -1,38 +1,440 @@
 [
     {
-      "modelName": "Model A",
-      "company": "Company X",
-      "benchmarkLow": 75,
-      "benchmarkDiff": 5,
-      "benchmarkHigh": 80
+        "modelName": "claude-2.0",
+        "modelTitle": "Claude 2.0",
+        "company": "Anthropic",
+        "gpqa": 0.35
     },
     {
-      "modelName": "Model B",
-      "company": "Company Y",
-      "benchmarkLow": 60,
-      "benchmarkDiff": 10,
-      "benchmarkHigh": 70
+        "modelName": "claude-2.1",
+        "modelTitle": "Claude 2.1",
+        "company": "Anthropic",
+        "gpqa": 0.33
     },
     {
-      "modelName": "Model C",
-      "company": "Company Z",
-      "benchmarkLow": 85,
-      "benchmarkDiff": 3,
-      "benchmarkHigh": 88
+        "modelName": "claude-3-haiku-20240307",
+        "modelTitle": "Claude 3 Haiku",
+        "company": "Anthropic",
+        "gpqa": 0.36
     },
     {
-      "modelName": "Model D",
-      "company": "Company X",
-      "benchmarkLow": 50,
-      "benchmarkDiff": 8,
-      "benchmarkHigh": 58
+        "modelName": "claude-3-opus-20240229",
+        "modelTitle": "Claude 3 Opus",
+        "company": "Anthropic",
+        "gpqa": 0.47
     },
     {
-      "modelName": "Model E",
-      "company": "Company Y",
-      "benchmarkLow": 90,
-      "benchmarkDiff": 2,
-      "benchmarkHigh": 92
+        "modelName": "claude-3-sonnet-20240229",
+        "modelTitle": "Claude 3 Sonnet",
+        "company": "Anthropic",
+        "gpqa": 0.41
+    },
+    {
+        "modelName": "claude-3-5-sonnet-20240620",
+        "modelTitle": "Claude 3.5 Sonnet",
+        "company": "Anthropic",
+        "gpqa": 0.54
+    },
+    {
+        "modelName": "claude-3-5-sonnet-20241022",
+        "modelTitle": "Claude 3.6 Sonnet",
+        "company": "Anthropic",
+        "gpqa": 0.65
+    },
+    {
+        "modelName": "gemini-1.0-pro-001",
+        "modelTitle": "Gemini 1.0 Pro",
+        "company": "Google",
+        "gpqa": 0.34
+    },
+    {
+        "modelName": "gemini-1.5-flash-001",
+        "modelTitle": "Gemini 1.5 Flash",
+        "company": "Google",
+        "gpqa": 0.40
+    },
+    {
+        "modelName": "gemini-1.5-flash-002",
+        "modelTitle": "Gemini 1.6 Flash",
+        "company": "Google",
+        "gpqa": 0.47
+    },
+    {
+        "modelName": "gemini-1.5-pro-001",
+        "modelTitle": "Gemini 1.5 Pro",
+        "company": "Google",
+        "gpqa": 0.46
+    },
+    {
+        "modelName": "gemini-1.5-pro-002",
+        "modelTitle": "Gemini 1.6 Pro",
+        "company": "Google",
+        "gpqa": 0.57
+    },
+    {
+        "modelName": "gemma-2-9b-it",
+        "modelTitle": "Gemma 2 9B",
+        "company": "Google",
+        "gpqa": 0.27
+    },
+    {
+        "modelName": "gemma-2-27b-it",
+        "modelTitle": "Gemma 2 27B",
+        "company": "Google",
+        "gpqa": 0.36
+    },
+    {
+        "modelName": "gemini-2.0-flash-001",
+        "modelTitle": "Gemini 2.0 Flash",
+        "company": "Google",
+        "gpqa": 0.64
+    },
+    {
+        "modelName": "gemini-2.0-pro-exp-02-05",
+        "modelTitle": "Gemini 2.0 Pro",
+        "company": "Google",
+        "gpqa": 0.65
+    },
+    {
+        "modelName": "gemini-2.0-flash-thinking-exp-01-21",
+        "modelTitle": "Gemini 2.0 Flash Thinking",
+        "company": "Google",
+        "gpqa": 0.57
+    },
+    {
+        "modelName": "gpt-4-0613",
+        "modelTitle": "GPT 4",
+        "company": "OpenAI",
+        "gpqa": 0.31
+    },
+    {
+        "modelName": "gpt-3.5-turbo-1106",
+        "modelTitle": "GPT 3.5 Turbo Early",
+        "company": "OpenAI",
+        "gpqa": 0.28
+    },
+    {
+        "modelName": "gpt-4-1106-preview",
+        "modelTitle": "GPT 4 Turbo Early",
+        "company": "OpenAI",
+        "gpqa": 0.42
+    },
+    {
+        "modelName": "gpt-3.5-turbo-0125",
+        "modelTitle": "GPT 3.5 Turbo Late",
+        "company": "OpenAI",
+        "gpqa": 0.27
+    },
+    {
+        "modelName": "gpt-4-0125-preview",
+        "modelTitle": "GPT 4 Turbo Late",
+        "company": "OpenAI",
+        "gpqa": 0.42
+    },
+    {
+        "modelName": "gpt-4o-2024-05-13",
+        "modelTitle": "GPT 4o May 24",
+        "company": "OpenAI",
+        "gpqa": 0.49
+    },
+    {
+        "modelName": "gpt-4o-mini-2024-07-18",
+        "modelTitle": "GPT 4o mini",
+        "company": "OpenAI",
+        "gpqa": 0.38
+    },
+    {
+        "modelName": "gpt-4o-2024-08-06",
+        "modelTitle": "GPT 4o Aug 24",
+        "company": "OpenAI",
+        "gpqa": 0.49
+    },
+    {
+        "modelName": "o1-preview-2024-09-12_medium",
+        "modelTitle": "o1 preview",
+        "company": "OpenAI",
+        "gpqa": 0.50
+    },
+    {
+        "modelName": "o1-mini-2024-09-12_medium",
+        "modelTitle": "o1 mini medium",
+        "company": "OpenAI",
+        "gpqa": 0.60
+    },
+    {
+        "modelName": "o1-mini-2024-09-12_high",
+        "modelTitle": "o1 mini high",
+        "company": "OpenAI",
+        "gpqa": 0.62
+    },
+    {
+        "modelName": "gpt-4o-2024-11-20",
+        "modelTitle": "GPT-4o Nov 24",
+        "company": "OpenAI",
+        "gpqa": 0.48
+    },
+    {
+        "modelName": "o1-2024-12-17_medium",
+        "modelTitle": "o1 medium",
+        "company": "OpenAI",
+        "gpqa": 0.76
+    },
+    {
+        "modelName": "o1-2024-12-17_high",
+        "modelTitle": "o1 high",
+        "company": "OpenAI",
+        "gpqa": 0.77
+    },
+    {
+        "modelName": "o3-mini-2025-01-31_medium",
+        "modelTitle": "o3 mini medium",
+        "company": "OpenAI",
+        "gpqa": 0.74
+    },
+    {
+        "modelName": "o3-mini-2025-01-31_high",
+        "modelTitle": "o3 mini high",
+        "company": "OpenAI",
+        "gpqa": 0.77
+    },
+    {
+        "modelName": "gpt-4o-latest",
+        "modelTitle": "GPT-4o Jan 25",
+        "company": "OpenAI",
+        "gpqa": 0.53
+    },
+    {
+        "modelName": "grok-2-1212",
+        "modelTitle": "Grok 2",
+        "company": "xAI",
+        "gpqa": 0.54
+    },
+    {
+        "modelName": "grok-3-beta",
+        "modelTitle": "Grok 3",
+        "company": "xAI",
+        "gpqa": 0.75
+    },
+    {
+        "modelName": "grok-3-mini-beta",
+        "modelTitle": "Grok 3 mini",
+        "company": "xAI",
+        "gpqa": 0.66
+    },
+    {
+        "modelName": "grok-3-beta-thinking",
+        "modelTitle": "Grok 3 Thinking",
+        "company": "xAI",
+        "gpqa": 0.80
+    },
+    {
+        "modelName": "grok-3-mini-beta-thinking",
+        "modelTitle": "Grok 3 mini Thinking",
+        "company": "xAI",
+        "gpqa": 0.80
+    },
+    {
+        "modelName": "Hermes-2-Theta-Llama-3-70B",
+        "modelTitle": "Hermes Llama 3 70B",
+        "company": "NousResearch",
+        "gpqa": 0.37
+    },
+    {
+        "modelName": "Llama-2-70B-chat-hf",
+        "modelTitle": "Llama 2 70B",
+        "company": "Meta",
+        "gpqa": 0.26
+    },
+    {
+        "modelName": "Llama-3.1-8B-instruct",
+        "modelTitle": "Llama 3.1 8B",
+        "company": "Meta",
+        "gpqa": 0.26
+    },
+    {
+        "modelName": "Llama-3.1-70B-instruct",
+        "modelTitle": "Llama 3.1 70B",
+        "company": "Meta",
+        "gpqa": 0.44
+    },
+    {
+        "modelName": "Llama-3.1-405B-instruct",
+        "modelTitle": "Llama 3.1 405B",
+        "company": "Meta",
+        "gpqa": 0.51
+    },
+    {
+        "modelName": "Llama-3.2-90B-Vision-Instruct",
+        "modelTitle": "Llama 3.2 90B Vision",
+
+        "company": "Meta",
+        "gpqa": 0.41
+    },
+    {
+        "modelName": "Llama-3.3-70B-Instruct",
+        "modelTitle": "Llama 3.3 70B",
+        "company": "Meta",
+        "gpqa": 0.47
+    },
+    {
+        "modelName": "Qwen1.5-32B-Instruct",
+        "modelTitle": "Qwen 1.5 32B",
+        "company": "Alibaba",
+        "gpqa": 0.31
+    },
+    {
+        "modelName": "Qwen1.5-72B-Instruct",
+        "modelTitle": "Qwen 1.5 72B",
+        "company": "Alibaba",
+        "gpqa": 0.29
+    },
+    {
+        "modelName": "Qwen2-72B-Instruct",
+        "modelTitle": "Qwen 2 72B",
+        "company": "Alibaba",
+        "gpqa": 0.41
+    },
+    {
+        "modelName": "Qwen2.5-32B-Instruct",
+        "modelTitle": "Qwen 2.5 32B",
+        "company": "Alibaba",
+        "gpqa": 0.46
+    },
+    {
+        "modelName": "Qwen2.5-72B-Instruct",
+        "modelTitle": "Qwen 2.5 72B",
+        "company": "Alibaba",
+        "gpqa": 0.49
+    },
+    {
+        "modelName": "Yi-34B-Chat",
+        "modelTitle": "Yi 34B",
+        "company": "01-ai",
+        "gpqa": 0.15
+    },
+    {
+        "modelName": "Yi-1.5-34B-Chat",
+        "modelTitle": "Yi 1.5 34B",
+        "company": "01-ai",
+        "gpqa": 0.32
+    },
+    {
+        "modelName": "Mistral-7B-Instruct-v0.3",
+        "modelTitle": "Mistral v0.3 7B",
+        "company": "Mistral",
+        "gpqa": 0.15
+    },
+    {
+        "modelName": "Mixtral-8x7B-Instruct-v0.1",
+        "modelTitle": "Mixtral v0.1 8x7B",
+        "company": "Mistral",
+        "gpqa": 0.31
+    },
+    {
+        "modelName": "ministral-3b-2410",
+        "modelTitle": "Ministral 3B",
+        "company": "Mistral",
+        "gpqa": 0.25
+    },
+    {
+        "modelName": "ministral-8b-2410",
+        "modelTitle": "Ministral 8B",
+        "company": "Mistral",
+        "gpqa": 0.25
+    },
+    {
+        "modelName": "mistral-large-2402",
+        "modelTitle": "Mistral Large 2402",
+        "company": "Mistral",
+        "gpqa": 0.39
+    },
+    {
+        "modelName": "mistral-large-2407",
+        "modelTitle": "Mistral Large 2407",
+        "company": "Mistral",
+        "gpqa": 0.49
+    },
+    {
+        "modelName": "open-mistral-7b",
+        "modelTitle": "Open Mistral 7B",
+        "company": "Mistral",
+        "gpqa": 0.13
+    },
+    {
+        "modelName": "open-mistral-nemo-2407",
+        "modelTitle": "Open Mistral Nemo",
+        "company": "Mistral",
+        "gpqa": 0.30
+    },
+    {
+        "modelName": "open-mixtral-8x22b",
+        "modelTitle": "Open Mixtral 8x22B",
+        "company": "Mistral",
+        "gpqa": 0.34
+    },
+    {
+        "modelName": "open-mixtral-8x7b",
+        "modelTitle": "Open Mixtral 8x7B",
+        "company": "Mistral",
+        "gpqa": 0.30
+    },
+    {
+        "modelName": "mistral-small-2501",
+        "modelTitle": "Mistral Small",
+        "company": "Mistral",
+        "gpqa": 0.45
+    },
+    {
+        "modelName": "deepseek-llm-67b-chat",
+        "modelTitle": "DeepSeek 67B Chat",
+        "company": "DeepSeek",
+        "gpqa": 0.25
+    },
+    {
+        "modelName": "deepseek-v3",
+        "modelTitle": "DeepSeek v3",
+        "company": "DeepSeek",
+        "gpqa": 0.59
+    },
+    {
+        "modelName": "DeepSeek-R1",
+        "company": "DeepSeek",
+        "gpqa": 0.72
+    },
+    {
+        "modelName": "WizardLM-2-8x22B",
+        "modelTitle": "WizardLM 2 8x22B",
+        "company": "WizardLM",
+        "gpqa": 0.43
+    },
+    {
+        "modelName": "dbrx-instruct",
+        "modelTitle": "dbrx",
+        "company": "DataBricks",
+        "gpqa": 0.33
+    },
+    {
+        "modelName": "Llama-3.1-Tulu-3-70B-DPO",
+        "modelTitle": "Tulu 3 70B",
+        "company": "AllenAI",
+        "gpqa": 0.41
+    },
+    {
+        "modelName": "Eurus-2-7B-PRIME",
+        "modelTitle": "Eurus 2 7B",
+        "company": "OpenBMB",
+        "gpqa": 0.41
+    },
+    {
+        "modelName": "Phi-3-medium-128k-instruct",
+        "modelTitle": "Phi 3",
+        "company": "Microsoft",
+        "gpqa": 0.28
+    },
+    {
+        "modelName": "phi-4",
+        "modelTitle": "Phi 4",
+        "company": "Microsoft",
+        "gpqa": 0.56
     }
-  ]
-  
+]
