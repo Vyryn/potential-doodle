@@ -1,0 +1,38 @@
+[
+    {
+      "modelName": "Model A",
+      "company": "Company X",
+      "benchmarkLow": 75,
+      "benchmarkDiff": 5,
+      "benchmarkHigh": 80
+    },
+    {
+      "modelName": "Model B",
+      "company": "Company Y",
+      "benchmarkLow": 60,
+      "benchmarkDiff": 10,
+      "benchmarkHigh": 70
+    },
+    {
+      "modelName": "Model C",
+      "company": "Company Z",
+      "benchmarkLow": 85,
+      "benchmarkDiff": 3,
+      "benchmarkHigh": 88
+    },
+    {
+      "modelName": "Model D",
+      "company": "Company X",
+      "benchmarkLow": 50,
+      "benchmarkDiff": 8,
+      "benchmarkHigh": 58
+    },
+    {
+      "modelName": "Model E",
+      "company": "Company Y",
+      "benchmarkLow": 90,
+      "benchmarkDiff": 2,
+      "benchmarkHigh": 92
+    }
+  ]
+  
