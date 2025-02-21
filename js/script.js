@@ -1,4 +1,3 @@
-let chart = false;
 
 function loadTableData() {
     fetch('data/data.json')
@@ -16,16 +15,9 @@ function loadTableData() {
           `;
           tbody.appendChild(tr);
         });
-        return data;
       })
-      .then(data =>{
-        if (!chart) {
-            createChart(data);
-            chart = true;
-        }
-    })
-    .catch(error => console.error('Error loading data:', error));
+      .catch(error => console.error('Error loading data:', error));
   }
   
-  // Load table data when DOM is ready
+  // Load table data when the table is loaded
   document.addEventListener("DOMContentLoaded", loadTableData);
