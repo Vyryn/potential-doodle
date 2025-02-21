@@ -8,13 +8,13 @@ function loadTableData() {
         data.forEach(row => {
           const tr = document.createElement('tr');
           const gpqaPercent = (row.gpqa * 100).toFixed(0) + '%';
-          const size = row.size.match(/\d+/);
-          const sizeperf = row.gpqa * 50 / parseInt(match[0], 10);
+          const size =extractInt(row.size)
+          const sizeperf = (row.gpqa * 100 - 25) / size;
           tr.innerHTML = `
             <td>${row.modelTitle}</td>
             <td>${row.company}</td>
             <td>${gpqaPercent}</td>
-            <td>${row.size}</td>
+            <td>${size}</td>
             <td>${sizeperf}</td>
           `;
           tbody.appendChild(tr);
@@ -22,6 +22,11 @@ function loadTableData() {
       })
       .catch(error => console.error('Error loading data:', error));
   }
+
+function extractInt(str) {
+    const match = str.match(/\d+/);
+    return match ? parseInt(match[0], 10) : null;
+}
   
   // Load table data when the table is loaded
   document.addEventListener("DOMContentLoaded", loadTableData);
