@@ -12,6 +12,7 @@ function loadTableData() {
             <td>${row.modelTitle}</td>
             <td>${row.company}</td>
             <td>${gpqaPercent}</td>
+            <td>${row.size}</td>
           `;
           tbody.appendChild(tr);
         });
