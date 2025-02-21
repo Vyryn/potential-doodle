@@ -19,6 +19,9 @@ function loadTableData() {
       .catch(error => console.error('Error loading data:', error));
   }
   
-  // Load table data when the DOM is fully loaded
+  // Load table data when the table is loaded
   document.addEventListener("DOMContentLoaded", loadTableData);
   
+  if (typeof createChart === "function") {
+    createChart(data);
+  }
