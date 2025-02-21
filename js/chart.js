@@ -28,6 +28,8 @@ function createChart(data) {
             ticks: {
                 callback: function(value) {
                   return value + '%';
+                }
+            }
           }
         }
       }
