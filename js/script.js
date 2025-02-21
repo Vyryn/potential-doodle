@@ -9,7 +9,7 @@ function loadTableData() {
           const tr = document.createElement('tr');
           const gpqaPercent = (row.gpqa * 100).toFixed(0) + '%';
           const size =extractInt(row.size)
-          const sizeperf = (row.gpqa * 100 - 25) / size;
+          const sizeperf = ((row.gpqa * 100 - 25) / (4 * size)).toFixed(3);
           tr.innerHTML = `
             <td>${row.modelTitle}</td>
             <td>${row.company}</td>
