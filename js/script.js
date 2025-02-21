@@ -15,11 +15,12 @@ function loadTableData() {
           `;
           tbody.appendChild(tr);
         });
+        return data;
       })
       .then(data =>{
         createChart(data);
     })
-      .catch(error => console.error('Error loading data:', error));
+    .catch(error => console.error('Error loading data:', error));
   }
   
   // Load table data when DOM is ready
