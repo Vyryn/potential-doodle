@@ -176,10 +176,17 @@
     },
     {
         "modelName": "o1-preview-2024-09-12_medium",
-        "modelTitle": "o1 preview",
+        "modelTitle": "o1 preview medium",
         "company": "OpenAI",
         "size": "50?",
         "gpqa": 0.50
+    },
+    {
+        "modelName": "o1-preview-2024-09-12_high",
+        "modelTitle": "o1 preview high",
+        "company": "OpenAI",
+        "size": "50?",
+        "gpqa": 0.72
     },
     {
         "modelName": "o1-mini-2024-09-12_medium",
@@ -343,6 +350,13 @@
         "gpqa": 0.41
     },
     {
+        "modelName": "Qwen2.5-7B-Instruct",
+        "modelTitle": "Qwen 2.5 7B",
+        "company": "Alibaba",
+        "size": "7",
+        "gpqa": 0.37
+    },
+    {
         "modelName": "Qwen2.5-32B-Instruct",
         "modelTitle": "Qwen 2.5 32B",
         "company": "Alibaba",
@@ -355,6 +369,13 @@
         "company": "Alibaba",
         "size": "72",
         "gpqa": 0.49
+    },
+    {
+        "modelName": "QwQ-32B-preview",
+        "modelTitle": "QwQ 32B",
+        "company": "Alibaba",
+        "size": "32",
+        "gpqa": 0.65
     },
     {
         "modelName": "Yi-34B-Chat",
@@ -509,5 +530,26 @@
         "company": "Microsoft",
         "size": "14",
         "gpqa": 0.56
+    },
+    {
+        "modelName": "Doubao-1.5-pro",
+        "modelTitle": "Doubau 1.5 Pro",
+        "company": "ByteDance",
+        "size": "20",
+        "gpqa": 0.65
+    },
+    {
+        "modelName": "Hunyuan-Large",
+        "modelTitle": "Hunyuan Large",
+        "company": "Tencent",
+        "size": 52,
+        "gpqa": 0.42
+    },
+    {
+        "modelName": "Hunyuan-7B-Instruct",
+        "modelTitle": "Hunyuan 7B",
+        "company": "Tencent",
+        "size": 7,
+        "gpqa": 0.48
     }
 ]
