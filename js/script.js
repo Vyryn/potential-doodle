@@ -7,10 +7,11 @@ function loadTableData() {
         tbody.innerHTML = ''; // Clear any existing data
         data.forEach(row => {
           const tr = document.createElement('tr');
+          const gpqaPercent = (row.gpqa * 100).toFixed(2) + '%';
           tr.innerHTML = `
             <td>${row.modelTitle}</td>
             <td>${row.company}</td>
-            <td>${row.gpqa}</td>
+            <td>${gpqaPercent}</td>
           `;
           tbody.appendChild(tr);
         });
