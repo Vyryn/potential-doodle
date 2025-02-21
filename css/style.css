@@ -42,7 +42,6 @@ body {
   }
 
   .chart-section {
-    min-height: 450px; /* 400px for chart + extra space for heading/margins */
     margin-top: 40px;
     text-align: center;
   }
