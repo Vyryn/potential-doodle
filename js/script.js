@@ -8,11 +8,13 @@ function loadTableData() {
         data.forEach(row => {
           const tr = document.createElement('tr');
           const gpqaPercent = (row.gpqa * 100).toFixed(0) + '%';
+          const sizeperf = row.gpqa * 50 / row.size
           tr.innerHTML = `
             <td>${row.modelTitle}</td>
             <td>${row.company}</td>
             <td>${gpqaPercent}</td>
             <td>${row.size}</td>
+            <td>${sizeperf}</td>
           `;
           tbody.appendChild(tr);
         });
