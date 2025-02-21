@@ -15,10 +15,10 @@ function loadTableData() {
           `;
           tbody.appendChild(tr);
         });
-        if (typeof createChart === "function") {
-            createChart(data);
-        }
       })
+      .then(data =>{
+        createChart(data);
+    })
       .catch(error => console.error('Error loading data:', error));
   }
   
