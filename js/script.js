@@ -1,3 +1,4 @@
+let chart = false;
 
 function loadTableData() {
     fetch('data/data.json')
@@ -18,7 +19,10 @@ function loadTableData() {
         return data;
       })
       .then(data =>{
-        createChart(data);
+        if (!chart) {
+            createChart(data);
+            chart = true;
+        }
     })
     .catch(error => console.error('Error loading data:', error));
   }
