@@ -15,13 +15,12 @@ function loadTableData() {
           `;
           tbody.appendChild(tr);
         });
+        if (typeof createChart === "function") {
+            createChart(data);
+        }
       })
       .catch(error => console.error('Error loading data:', error));
   }
   
-  // Load table data when the table is loaded
+  // Load table data when DOM is ready
   document.addEventListener("DOMContentLoaded", loadTableData);
-  
-  if (typeof createChart === "function") {
-    createChart(data);
-  }
